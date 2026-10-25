@@ -1,0 +1,38 @@
+[package]
+name = "Hybride-RSA"
+version = "0.1.0"
+edition = "2024"
+default-run = "Hybride-RSA"
+
+[dependencies]
+aes-gcm = "0.10.3"
+base64 = "0.22.1"
+rand = "0.8.5"
+rsa = { version = "0.9.10", features = ["pkcs5", "sha2"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10.9"
+
+[[bin]]
+name = "rsa_simple"
+path = "src/rsa_simple.rs"
+
+[[bin]]
+name = "rsa_oaep"
+path = "src/rsa_oaep.rs"
+
+[[bin]]
+name = "hybride"
+path = "src/hybride.rs"
+
+[[bin]]
+name = "generer_cles"
+path = "src/generer_cles.rs"
+
+[[bin]]
+name = "donald"
+path = "src/donald.rs"
+
+[[bin]]
+name = "vladimir"
+path = "src/vladimir.rs"
